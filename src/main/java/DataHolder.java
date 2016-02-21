@@ -5,6 +5,7 @@ import java.util.ArrayList;
  */
 public class DataHolder {
     public static ArrayList events=new ArrayList<Object>();
+    public static ArrayList stringEvents = new ArrayList();
     public static int count =0;
     static{
         events.add(new Object[]{"ticket1","2016-01-01","12:12:12",123.23});
@@ -17,5 +18,7 @@ public class DataHolder {
         events.add(new Object[]{"ticket8","2016-01-08","12:12:19",123.30});
         events.add(new Object[]{"ticket9","2016-01-09","12:12:20",123.31});
         events.add(new Object[]{"ticket10","2016-01-10","12:12:21",123.32});
+
+
     }
 }
