@@ -28,7 +28,6 @@ import io.netty.handler.ssl.util.SelfSignedCertificate;
  * Simplistic telnet server.
  */
 public final class TelnetServer {
-
     static final boolean SSL = System.getProperty("ssl") != null;
     static final int PORT = Integer.parseInt(System.getProperty("port", SSL? "8992" : "8023"));
 

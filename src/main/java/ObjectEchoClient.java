@@ -27,7 +27,7 @@ public final class ObjectEchoClient {
 
     static final boolean SSL = System.getProperty("ssl") != null;
     static final String HOST = System.getProperty("host", "127.0.0.1");
-    static final int PORT = Integer.parseInt(System.getProperty("port", "8007"));
+    static final int PORT = Integer.parseInt(System.getProperty("port", "8009"));
     static final int SIZE = Integer.parseInt(System.getProperty("size", "256"));
 
     public static void main(String[] args) throws Exception {
@@ -65,7 +65,7 @@ public final class ObjectEchoClient {
             Scanner s=new Scanner(System.in);
             for(;;){
 
-                ch.writeAndFlush("req");
+                ch.writeAndFlush("REQ"+"\r\n");
                 System.err.println("requested..");
                 Thread.sleep(1000);
 
